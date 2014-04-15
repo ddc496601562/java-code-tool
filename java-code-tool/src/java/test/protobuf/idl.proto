@@ -1,0 +1,9 @@
+package tutorial;
+
+option java_generic_services = true;
+option java_package = "com.baidu.rigelci.protobuf";
+option java_outer_classname = "AddressBookProtos";
+
+service GetDetailInfo {
+  rpc getDetail(IDS) returns(Person);
+}
