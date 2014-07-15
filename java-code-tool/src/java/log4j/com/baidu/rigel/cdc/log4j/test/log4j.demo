@@ -1,0 +1,31 @@
+log4j.rootCategory=INFO ,R 
+
+og4j.appender = R  
+log4j.appender.R=org.apache.log4j.DailyRollingFileAppender
+log4j.appender.R.File=/home/hive-web/log/allLog.log
+log4j.appender.R.layout=org.apache.log4j.PatternLayout
+log4j.appender.R=org.apache.log4j.DailyRollingFileAppender
+log4j.appender.R.DatePattern  ='.'yyyy-MM-dd
+log4j.appender.R.layout.ConversionPattern=%d-[HL] %p %t %c - %m%n
+
+log4j.additivity.com.baidu.crontab.exec.TaskExecManager=false
+log4j.logger.com.baidu.crontab.exec.TaskExecManager=INFO,index
+log4j.appender.index=org.apache.log4j.DailyRollingFileAppender
+log4j.appender.index.file=/home/hive-web/log/cmdExec.log
+log4j.appender.index.layout=org.apache.log4j.PatternLayout
+log4j.appender.index.layout.ConversionPattern=[%p]\t%d\t[%t]\t%c{3}\t(%F\:%L)\t-%m%n
+
+log4j.additivity.org.apache.hadoop.hive=false
+log4j.logger.org.apache.hadoop.hive=INFO,hive_log
+log4j.appender.hive_log=org.apache.log4j.DailyRollingFileAppender
+log4j.appender.hive_log.file=/home/hive-web/log/hive_log.log
+log4j.appender.hive_log.layout=org.apache.log4j.PatternLayout
+log4j.appender.hive_log.layout.ConversionPattern=[%p]\t%d\t[%t]\t%c{3}\t(%F\:%L)\t-%m%n
+
+
+ 
+log4j.logger.org.springframework=DEBUG
+log4j.logger.com.ibatis.db=WARN
+log4j.logger.org.hibernate=DEBUG
+log4j.logger.org.hibernate.ps.PreparedStatementCache=WARN
+log4j.logger.com.myproject=DEBUG
