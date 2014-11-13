@@ -1,6 +1,6 @@
-package com.baidu.rigel.cdc;
+package com.baidu.jetty;
 
-import com.baidu.rigel.cdc.serverlet.FileTailServlet;
+import com.baidu.jetty.serverlet.FileTailServlet;
 
 public class JettyTestMain {
 	public static void main(String[] args) throws Exception {

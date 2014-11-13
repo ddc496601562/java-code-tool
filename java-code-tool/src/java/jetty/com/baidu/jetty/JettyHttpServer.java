@@ -1,4 +1,4 @@
-package com.baidu.rigel.cdc;
+package com.baidu.jetty;
 
 
 import javax.servlet.http.HttpServlet;
@@ -11,7 +11,7 @@ import org.mortbay.jetty.servlet.ServletHolder;
 import org.mortbay.jetty.webapp.WebAppContext;
 import org.mortbay.thread.QueuedThreadPool;
 
-import com.baidu.rigel.cdc.serverlet.StackServlet;
+import com.baidu.jetty.serverlet.StackServlet;
 
 public class JettyHttpServer {
 	  private final Server webServer;

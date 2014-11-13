@@ -1,4 +1,4 @@
-package com.baidu.rigel.cdc.serverlet;
+package com.baidu.jetty.serverlet;
 
 import java.io.File;
 import java.io.FileInputStream;

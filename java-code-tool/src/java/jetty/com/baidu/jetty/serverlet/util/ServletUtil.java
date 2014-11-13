@@ -1,4 +1,4 @@
-package com.baidu.rigel.cdc.serverlet.util;
+package com.baidu.jetty.serverlet.util;
 
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
